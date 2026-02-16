@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>IMAGE SLIDER</title>
+    <link rel="stylesheet" href="galler.css">
+</head>
+<body>
+    <div class="para">
+        <h1>IMAGE SLIDER</h1>
+    </div>
+    <div class="gallery-wrap">
+        <img src="arrow.webp" id="backbutton">
+        <div class="gallery">
+    <div>
+        <span><img src="g44.jpg" ></span>
+        <span><img src="img33.jpg" ></span>
+        <span><img src="gg.jpg" ></span>
+        
+    </div>
+    <div>
+        <span><img src="rrrrr.webp" ></span>
+        <span><img src="xccccc.webp" ></span>
+        <span><img src="OIP.webp" ></span>
+        
+    </div>
+</div>
+        <img src="arrow2.webp" id="nextbtn">
+    </div>
+
+  <script>
+    let scrollcontainer=document.querySelector(".gallery");
+    let backbutton= document.getElementById("backbutton");
+    let nextbtn=document.getElementById("nextbtn");
+
+    nextbtn.addEventListener("click",()=>{
+        scrollcontainer.style.scrollBehavior="smooth"
+        scrollcontainer.scrollLeft +=800;
+
+    })
+    backbutton.addEventListener("click",()=>{
+        scrollcontainer.style.scrollBehavior="smooth"
+        scrollcontainer.scrollLeft -=800;
+        
+    })
+
+
+  </script>  
+
+    
+</body>
+</html>
